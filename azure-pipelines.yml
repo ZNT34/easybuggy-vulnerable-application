@@ -1,7 +1,5 @@
 # Maven
-# Build your Java project and run tests with Apache Maven.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
 
 trigger:
 - main
@@ -20,3 +18,10 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+
+- task: SynopsysSecurityScan@1
+  inputs:
+    scanType: 'blackduck'
+    bridge_blackduck_url: 'https://blackduck.codexsecure.com/'
+    bridge_blackduck_token: 'ODRhYTYwYzItMTgwMC00NTg5LTlmZmUtNjUyZjUyMWY1YWU4OjkzYWFjOWMxLTdjM2QtNGVhYS05MmE2LWJiNWE5MWRkYmU1Yg=='
+    bridge_blackduck_scan_full: true
