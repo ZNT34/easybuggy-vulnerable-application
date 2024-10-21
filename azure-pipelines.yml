@@ -25,3 +25,5 @@ steps:
     bridge_blackduck_url: 'https://blackduck.codexsecure.com/'
     bridge_blackduck_token: 'ODRhYTYwYzItMTgwMC00NTg5LTlmZmUtNjUyZjUyMWY1YWU4OjkzYWFjOWMxLTdjM2QtNGVhYS05MmE2LWJiNWE5MWRkYmU1Yg=='
     bridge_blackduck_scan_full: true
+    env:
+    DETECT_PROJECT_NAME: 'Vulnerable Project'
