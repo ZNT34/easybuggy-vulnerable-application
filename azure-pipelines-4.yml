@@ -24,7 +24,7 @@ steps:
 - task: SynopsysSecurityScan@1
   inputs:
     scanType: 'blackduck'
-    bridge_blackduck_url: 'https://blackduck.codexsecure.com/'
-    bridge_blackduck_token: 'ODRhYTYwYzItMTgwMC00NTg5LTlmZmUtNjUyZjUyMWY1YWU4Ojg3OWU3NTFlLWQ3YjEtNGQxNy1iNGQ4LTRlZjUyMmEyNzg4OQ=='
+    bridge_blackduck_url: 'https://95.173.164.13'
+    bridge_blackduck_token: 'ODRhYTYwYzItMTgwMC00NTg5LTlmZmUtNjUyZjUyMWY1YWU4OmQyNGE4MmFjLWE0NTEtNDY0Yy1hYjhmLWE3NTZjYWI0NTc3NA=='
     bridge_blackduck_scan_full: true
     
