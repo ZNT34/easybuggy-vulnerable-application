@@ -19,3 +19,10 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
+- task: SynopsysSecurityScan@1
+  inputs:
+    scanType: 'srm'
+    srmUrl: 'https://srm.codexsecure.com/'
+    srmApikey: 'api-key:r3N-m0YhKWkEsKa7ugESl8SEwr7pYdy9asl6_otC'
+    srmAssessmentTypes: 'SAST'
+    srmProjectName: 'Test'
