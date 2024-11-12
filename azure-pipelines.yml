@@ -21,7 +21,9 @@ steps:
 
 - task: SynopsysSecurityScan@1
   inputs:
-    scanType: 'blackduck'
-    bridge_blackduck_url: 'https://blackduck.codexsecure.com/'
-    bridge_blackduck_token: 'NDQ4NWM4ODktNjZmZC00MjI3LTg1ZWUtYTRjZjk0YzhlNzA4Ojc1YjQ1MDUzLTI0NTMtNDQxMS1hYzViLTE2NjBhNmFhYmZiMQ=='
-    bridge_blackduck_scan_full: true
+    scanType: 'coverity'
+    bridge_coverity_connect_url: 'https://coverity.codexsecure.com/'
+    bridge_coverity_connect_user_name: 'admin'
+    bridge_coverity_connect_user_password: 'C0verity@-Sys7781*'
+    bridge_coverity_connect_project_name: 'Easy-Bugy'
+    bridge_coverity_connect_stream_name: 'main'
