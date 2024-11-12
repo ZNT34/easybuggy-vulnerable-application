@@ -23,11 +23,9 @@ steps:
 - task: SynopsysSecurityScan@1
   inputs:
     scanType: 'coverity'
-    bridge_coverity_connect_url: 'https://coverity.codexsecure.com/'
+    bridge_coverity_connect_url: 'https://coverity.codexsecure.com'
     bridge_coverity_connect_user_name: 'admin'
     bridge_coverity_connect_user_password: 'C0verity@-Sys7781*'
     bridge_coverity_connect_project_name: 'Easy-buggy'
     bridge_coverity_connect_stream_name: 'main'
     azure_token: '358312B63CA6B67B0FA33B18661A4653'
-    bridge_coverity_local: true
-    bridge_coverity_install_directory: false
