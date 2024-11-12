@@ -19,3 +19,9 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
+- task: SynopsysSecurityScan@1
+  inputs:
+    scanType: 'blackduck'
+    bridge_blackduck_url: 'https://blackduck.codexsecure.com/'
+    bridge_blackduck_token: 'NDQ4NWM4ODktNjZmZC00MjI3LTg1ZWUtYTRjZjk0YzhlNzA4Ojc1YjQ1MDUzLTI0NTMtNDQxMS1hYzViLTE2NjBhNmFhYmZiMQ=='
+    bridge_blackduck_scan_full: true
