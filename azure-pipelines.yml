@@ -25,4 +25,3 @@ steps:
     bridge_blackduck_url: 'https://blackduck.codexsecure.com/'
     bridge_blackduck_token: 'ODRhYTYwYzItMTgwMC00NTg5LTlmZmUtNjUyZjUyMWY1YWU4OmMwMGM3ZGE0LWNhM2MtNGQyMy04NmRmLTNkM2EyY2Q3ODRjZQ=='
     bridge_blackduck_scan_full: true
-    bridge_blackduck_fixpr_enabled: true
