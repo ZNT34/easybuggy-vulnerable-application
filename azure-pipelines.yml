@@ -18,9 +18,4 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: SynopsysSecurityScan@1
-  inputs:
-    scanType: 'blackduck'
-    bridge_blackduck_url: 'https://10.100.100.105/'
-    bridge_blackduck_token: 'ODRhYTYwYzItMTgwMC00NTg5LTlmZmUtNjUyZjUyMWY1YWU4OmIwZjc1MGI1LTk5NGEtNDViYi04OWJlLTFhNmYwYTBiNTM3Zg=='
-    bridge_blackduck_scan_full: true
+
